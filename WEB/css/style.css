@@ -1,0 +1,162 @@
+*{
+font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background: rgb(0, 0, 0);
+}
+
+#catalogo_juegos{
+    margin-top: 100px;
+}
+
+#categorias{
+    margin-top: 85px;
+    padding-top: 20px;
+}
+.icon_editar_categoria:hover{
+    cursor: pointer;
+    font-size: 25px;
+}
+#btn_ingresar_persona{
+    text-decoration: none;
+    font-size: 23px;
+    color: white;
+}
+#btn_ingresar_persona:hover{
+    cursor: pointer;
+    font-size: 25px;
+    text-shadow: 1px 1px 10px white;
+}
+#btn_abrir_ingresar_categoria{
+    text-decoration: none;
+    font-size: 23px;
+    color: white;
+}
+
+#btn_abrir_ingresar_categoria:hover{
+    cursor: pointer;
+    font-size: 25px;
+    text-shadow: 1px 1px 10px white;
+}
+#catalogo_juegos{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+}
+@media screen and (max-width: 1200px) {
+    #catalogo_juegos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #catalogo_juegos {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.contenedor_videojuego{
+    margin-top: 20px;
+    text-align: center;
+    width: 250px;
+}
+.contenedor_videojuego:hover{
+opacity: 1;
+}
+
+.contenedor_videojuego:hover{
+    cursor: pointer;
+}
+
+.portada_videojuego{
+    width: 250px;
+    height: 300px;
+}
+.nombre_videojuego{
+    margin-top: 10px;
+    font-size: 19px;
+    font-weight: bold;
+}
+.juego_nombre:hover{
+    color: rgb(9, 64, 241);
+}
+#modal_modificar_categoria{
+    display: none;
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 700px;
+    height: 400px;
+    /* padding-left: 150px; */
+    padding-top: 70px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px black;
+    margin-inline: 33%;
+    margin-top: 100px;
+    border-radius: 15px;
+}
+
+#modal_insertar_categoria{
+    display: none;
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 700px;
+    height: 400px;
+    /* padding-left: 150px; */
+    padding-top: 70px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px black;
+    margin-inline: 33%;
+    margin-top: 100px;
+    border-radius: 15px;
+}
+#modal_actualizar{
+    display: none;
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 700px;
+    height: 770px;
+    /* padding-left: 150px; */
+    padding-top: 70px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px black;
+    margin-inline: 33%;
+    margin-top: 100px;
+    border-radius: 15px;
+}
+#modal_insertar{
+    display: none;
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 700px;
+    height: 770px;
+    /* padding-left: 150px; */
+    padding-top: 70px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px black;
+    margin-inline: 33%;
+    margin-top: 100px;
+    border-radius: 15px;
+}
+.btn_cerrar_modal:hover{
+    cursor: pointer;
+}
+.input_modal{
+    width: 70%;
+    border-radius: 10px;
+    padding-left: 5px;
+}
+
